@@ -61,15 +61,21 @@ h1:hover {
   font-size: 30px;
   /* text-transform: uppercase; */
   letter-spacing: 3px;
-  color: rgb(116, 115, 115);
-  margin: 100px auto;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 8px black;
+  margin: 0 auto;
   width:80%;
+ padding-top: 120px;
 }
 
 .caja1 {
   width: 100%;
-  height: 300px;
-}
+  height: 400px;
+  background-image:url("../img/1.jpg");
+  background-repeat: round;
+ }
+
+
 .caja2 {
   width: 100%;
   height: 600px;
@@ -115,7 +121,7 @@ h1:hover {
   font-size: 40px;
   letter-spacing: 3px;
   color:  #e67e22;
-  margin: 80px auto;
+  margin: 75px auto;
   width:100%;
 }
 .ser {
@@ -126,6 +132,14 @@ h1:hover {
   margin: 20px auto;
   width:100%;
   padding-left: 10px;
+  transition: all .4s ease-out;
+}
+
+.ser:hover {
+  /* transform:scale(1.1,1.1); */
+  /* transform:rotate(5deg); */
+  font-size: 31px;
+  color: rgb(61, 61, 61);
 }
 
 .ser2 {
@@ -154,16 +168,54 @@ h1:hover {
 }
 
 .pie {
-  background-color: black;
+  background-color: #2c3e50;
   color: white;
   width:100%;
   height:80px;
   margin: 0;
+ 
+}
+
+.txtpie {
+  width: 220px;
+  letter-spacing: 2px;
+  text-align: center;
+  transition: all .3s ease-out;
+}
+
+h3.txtpie:hover {
+  transform: translate(0, 5px);
 }
 
 /* EDITAR EL TEXTO DEL PIE */
 
 
+
+/* ACA EDITO EL SCROLL ARRIBA - es de aweasome poner el script y el link */
+/*botón up*/
+.boton-subir{
+  display: none;
+  background: #e74c3c;
+  border: thin solid #fff;
+  border-radius: 3px;
+  position: fixed;
+  right: 15px;
+  bottom:2px;
+  z-index: 999999999;
+}
+/*evento hover*/
+.boton-subir:hover{
+  box-shadow:   0px 2px 10px 0px rgba(107, 106, 106, 0.75);
+}
+/*estilos para el tag i*/
+.boton-subir i{
+  color: #fff;
+  font-size: 1.5em;
+  padding: 10px 10px 10px 7px;
+  -ms-transform: rotate(-45deg); /* IE 9 */
+  -webkit-transform: rotate(-45deg); /* Chrome, Safari, Opera */
+  transform: rotate(-45deg);
+}
 
 .menu {
   list-style: none;
@@ -245,3 +297,47 @@ li.slider {
     transform: scale(1);
 }
 }
+
+@media (max-width:600px){
+h1 {
+font-size: 22px;
+}
+
+.somos {
+  font-size: 23px;
+  padding-top: 80px;
+
+}
+
+.nos {
+  font-size: 23px;
+  margin: -60px auto;
+}
+
+.ser{
+  font-size: 23px;
+  transition: all .4s ease-out;
+}
+
+.ser:hover {
+  /* transform:scale(1.1,1.1); */
+  /* transform:rotate(5deg); */
+  font-size: 24px;
+  color: rgb(61, 61, 61);
+}
+
+
+
+.arriba {
+  display : contents;
+}
+.menu {
+  height: 90px;
+}
+
+.servicios {
+  margin : 40px auto;
+}
+
+}
+  
