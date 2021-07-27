@@ -251,6 +251,53 @@ h3.txtpie:hover {
 
 /* EDITAR EL TEXTO DEL PIE */
 
+/* ACA PONGO EL FORM - css */
+label {
+  display:block;
+  margin-top:20px;
+  letter-spacing:1px;
+  
+}
+
+.principal {
+  display:block;
+  margin:0 auto;
+  width:510px;
+  color: #666666;
+  /* font-family:Arial; */
+  font-family: 'PT Sans';
+  font-size: normal;
+
+}
+
+form {
+  margin:0 auto;
+  width:400px;
+}
+
+input, textarea {
+  width:380px;
+  height:27px;
+  background:#c5b8b844;
+  border:2px solid #d4d1d1;
+  padding:10px;
+  margin-top:5px;
+  font-size:10px;
+  color:#ffffff;
+  border-radius: 10px ;
+}
+
+textarea {
+  height:150px;
+}
+
+#submit {
+  width:85px;
+  height:35px;
+  border:none;
+  margin-top:20px;
+  cursor:pointer;
+}
 
 
 /* ACA EDITO EL SCROLL ARRIBA - es de aweasome poner el script y el link */
