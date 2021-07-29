@@ -469,8 +469,6 @@ font-size: 22px;
   color: rgb(61, 61, 61);
 }
 
-
-
 .arriba {
   display : contents;
 }
@@ -482,6 +480,9 @@ font-size: 22px;
   margin : 40px auto;
 }
 
+details > summary {
+  list-style: none;
+}
 details summary::-webkit-details-marker {
   display:none;
 }
@@ -505,7 +506,9 @@ summary::-webkit-details-marker {
 details summary::-webkit-details-marker {
     display:none;
 }
-
+details > summary {
+  list-style: none;
+}
 }
 
 @media (max-width:380px) {
@@ -533,6 +536,9 @@ summary::-webkit-details-marker {
   }
 details summary::-webkit-details-marker {
     display:none;
+}
+details > summary {
+  list-style: none;
 }
 
 }
