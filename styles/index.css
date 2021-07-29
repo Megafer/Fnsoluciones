@@ -517,7 +517,7 @@ font-size: 22px;
   margin: 25px;
 }
 
-/* summary::-webkit-details-marker {
+summary::-webkit-details-marker {
   display: none;
-} */
+} 
 }
