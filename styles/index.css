@@ -134,6 +134,11 @@ summary {
 summary::-webkit-details-marker {
   display: none;
   }
+details summary::-webkit-details-marker {
+    display:none;
+}
+
+
 summary:before { 
   content:url("../img/sig.png");
  
@@ -480,6 +485,9 @@ font-size: 22px;
 details summary::-webkit-details-marker {
   display:none;
 }
+summary::-webkit-details-marker {
+  display: none;
+  }
 
 }
   
@@ -523,5 +531,8 @@ details summary::-webkit-details-marker {
 summary::-webkit-details-marker {
   display: none;
   }
+details summary::-webkit-details-marker {
+    display:none;
+}
 
 }
