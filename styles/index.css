@@ -484,7 +484,7 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-}
+
   
 @media (max-width:450px) {
   html, body {
@@ -493,7 +493,6 @@ summary::-webkit-details-marker {
 
   .servicios {
     margin: 20px auto;
-}
 }
 summary::-webkit-details-marker {
   display: none;
@@ -520,9 +519,8 @@ summary::-webkit-details-marker {
 .ser2 {
   margin: 25px;
 }
-}
+
 summary::-webkit-details-marker {
   display: none;
 }
-
 }
