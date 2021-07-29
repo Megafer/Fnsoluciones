@@ -477,6 +477,10 @@ font-size: 22px;
   margin : 40px auto;
 }
 
+details summary::-webkit-details-marker {
+  display:none;
+}
+
 }
   
 @media (max-width:450px) {
@@ -490,6 +494,9 @@ font-size: 22px;
 summary::-webkit-details-marker {
   display: none;
   }
+details summary::-webkit-details-marker {
+    display:none;
+}
 
 }
 
