@@ -266,7 +266,7 @@ label {
 .principal {
   display:flex;
   margin:1px 12px;
-  width:510px;
+  width:auto;
   color: rgb(61, 61, 61);
   /* font-family:Arial; */
   /* font-family: 'PT Sans';
@@ -499,6 +499,7 @@ summary::-webkit-details-marker {
   }
 .principal {
   margin: 1px 4px;
+
 }
   .servicios {
     margin: 20px auto;
