@@ -480,9 +480,6 @@ font-size: 22px;
 }
 
 }
-summary::-webkit-details-marker {
-  display: none;
-}
 
 
   
@@ -494,9 +491,9 @@ summary::-webkit-details-marker {
   .servicios {
     margin: 20px auto;
 }
-summary::-webkit-details-marker {
+/* summary::-webkit-details-marker {
   display: none;
-}
+} */
 }
 
 @media (max-width:380px) {
@@ -520,7 +517,7 @@ summary::-webkit-details-marker {
   margin: 25px;
 }
 
-summary::-webkit-details-marker {
+/* summary::-webkit-details-marker {
   display: none;
-}
+} */
 }
