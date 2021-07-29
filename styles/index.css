@@ -136,15 +136,12 @@ summary::-webkit-details-marker {
   display: none;
 }
 
-
-
 summary:before { 
-  content:url(" ");
- 
+  content:"+ ";
 }
 
 details[open] > summary:before {
-  content:url(" ");
+content:"- ";
 }
 
 details[open] summary ~ * {
@@ -202,6 +199,7 @@ details[open] summary ~ * {
   height: auto;
   margin-bottom: -20px;
   background-image: linear-gradient( rgba(0, 0, 0, 0.0), rgba(255, 255, 255, 0.5)), url(../img/0202.jpg);
+  background-size: contain;
 }
 
 .contacto {
@@ -478,18 +476,6 @@ font-size: 22px;
 .servicios {
   margin : 40px auto;
 }
-summary:before { 
-  content:url(" ");
- 
-}
-
-details[open] > summary:before {
-  content:url(" ");
-}  
-  
-summary::-webkit-details-marker {
-  display: none;
-}  
 
 }
 
@@ -503,18 +489,9 @@ summary::-webkit-details-marker {
   .servicios {
     margin: 20px auto;
 }
-summary::-webkit-details-marker {
+/* summary::-webkit-details-marker {
   display: none;
-} 
-summary:before { 
-  content:url(" ");
- 
-}
-
-details[open] > summary:before {
-  content:url(" ");
-}  
-  
+} */
 }
 
 @media (max-width:380px) {
@@ -538,16 +515,7 @@ details[open] > summary:before {
   margin: 25px;
 }
 
-summary::-webkit-details-marker {
+/* summary::-webkit-details-marker {
   display: none;
-} 
-summary:before { 
-  content:url(" ");
- 
-}
-
-details[open] > summary:before {
-  content:url(" ");
-}
-  
+} */
 }
