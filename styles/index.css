@@ -478,6 +478,15 @@ font-size: 22px;
 .servicios {
   margin : 40px auto;
 }
+summary:before { 
+  content:url(" ");
+ 
+}
+
+details[open] > summary:before {
+  content:url(" ");
+}  
+  
 summary::-webkit-details-marker {
   display: none;
 }  
@@ -497,6 +506,15 @@ summary::-webkit-details-marker {
 summary::-webkit-details-marker {
   display: none;
 } 
+summary:before { 
+  content:url(" ");
+ 
+}
+
+details[open] > summary:before {
+  content:url(" ");
+}  
+  
 }
 
 @media (max-width:380px) {
@@ -523,4 +541,13 @@ summary::-webkit-details-marker {
 summary::-webkit-details-marker {
   display: none;
 } 
+summary:before { 
+  content:url(" ");
+ 
+}
+
+details[open] > summary:before {
+  content:url(" ");
+}
+  
 }
