@@ -139,12 +139,12 @@ summary::-webkit-details-marker {
 
 
 summary:before { 
-  content:url("../img/sig.png");
+  content:url(" ");
  
 }
 
 details[open] > summary:before {
-  content:url("../img/aba.png");
+  content:url(" ");
 }
 
 details[open] summary ~ * {
