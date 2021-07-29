@@ -487,6 +487,9 @@ font-size: 22px;
   .servicios {
     margin: 20px auto;
 }
+summary::-webkit-details-marker {
+  display: none;
+  }
 
 }
 
