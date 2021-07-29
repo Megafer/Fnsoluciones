@@ -1,4 +1,4 @@
-* {
+﻿* {
   box-sizing: border-box;
 }
 @font-face {
@@ -83,6 +83,7 @@ h1:hover {
   border-top: rgb(173, 173, 173) solid 1px;
   box-shadow:2px 5px 2px 5px rgba(0, 0, 0, 0.17);
   background-image:url("../img/22.jpg");
+  background-size: cover;
 
    
 }
@@ -133,10 +134,8 @@ summary {
 }
 summary::-webkit-details-marker {
   display: none;
-  }
-details summary::-webkit-details-marker {
-    display:none;
 }
+
 
 
 summary:before { 
@@ -480,15 +479,10 @@ font-size: 22px;
   margin : 40px auto;
 }
 
-details > summary {
-  list-style: none;
-}
-details summary::-webkit-details-marker {
-  display:none;
 }
 summary::-webkit-details-marker {
   display: none;
-  }
+}
 
 }
   
@@ -500,14 +494,9 @@ summary::-webkit-details-marker {
   .servicios {
     margin: 20px auto;
 }
+}
 summary::-webkit-details-marker {
   display: none;
-  }
-details summary::-webkit-details-marker {
-    display:none;
-}
-details > summary {
-  list-style: none;
 }
 }
 
@@ -531,14 +520,9 @@ details > summary {
 .ser2 {
   margin: 25px;
 }
+}
 summary::-webkit-details-marker {
   display: none;
-  }
-details summary::-webkit-details-marker {
-    display:none;
-}
-details > summary {
-  list-style: none;
 }
 
 }
