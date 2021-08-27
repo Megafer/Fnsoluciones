@@ -1,12 +1,12 @@
 ﻿* {
   box-sizing: border-box;
 }
-@font-face {
+/* @font-face {
   font-family: 'PT Sans';
   font-style: normal;
   font-weight: 400;
   src: url(https://fonts.gstatic.com/s/ptsans/v12/jizaRExUiTo99u79D0KEwA.ttf) format('truetype');
-}
+} */
 
 html {
   scroll-behavior: smooth;
@@ -17,8 +17,9 @@ body {
   padding: 0;
 }
 body {
-  font-family: 'PT Sans', Arial, Verdana;
+  /* font-family: 'PT Sans', Arial, Verdana; */
   background-color: #eee;
+  font-family: 'Nunito', sans-serif;
 }
 .arriba {
   width:100%;
@@ -40,6 +41,11 @@ body {
     cursor: pointer;
     src: url(/index.html)
   }
+
+#logofin {
+  padding: 20px 5px 5px 30px;
+  /* width: 80%; */
+}
 
 h1 {
   text-align: center;
@@ -66,6 +72,13 @@ h1:hover {
   margin: 0 auto;
   width:80%;
  padding-top: 120px;
+}
+
+#somosid {
+  margin: auto auto;
+  padding: 15px;
+  background-color: rgba(255, 255, 255, 0.19);
+  border-radius: 10px;
 }
 
 .caja1 {
@@ -137,11 +150,10 @@ summary::-webkit-details-marker {
 }
 
 summary:before { 
-  content:"+ ";
+  content:" ";
 }
-
 details[open] > summary:before {
-content:"- ";
+content:" ";
 }
 
 details[open] summary ~ * {
@@ -190,6 +202,39 @@ details[open] summary ~ * {
   line-height: 28px;
 }
 
+.caja {
+  width: 100%;
+  height: auto;
+  background-color: #eee;
+}
+
+.contweb {
+  /* width: 90%; */
+  height: auto;
+  display: grid;
+  grid-gap: 1rem;
+  justify-content: center;
+  padding: 1rem 0;
+  
+}
+
+.web {
+  /* width: 40%; */
+  /* height: 75px; */
+  /* padding: 2px 10px; */
+  padding: 7px 0;
+}
+
+.imgweb {
+  width: 100%;
+  height: 75px;
+  box-shadow: 2px 2px 4px 0px rgba(103, 98, 98, 0.95);
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+
 
 .caja4 {
   width: 100%;
@@ -232,7 +277,7 @@ details[open] summary ~ * {
 /* End: Google Maps Responsive */
 
 
-/* EDITAR EL TEXTO DEL PIE */
+/* Div DEL PIE */
 .pie {
   background-color: #2c3e50;
   color: white;
@@ -242,10 +287,10 @@ details[open] summary ~ * {
   margin-top:0;
   /* padding-top: 10px; */
 } 
-
+/* EDITAR EL TEXTO DEL PIE */
 .txtpie {
-  width: 220px;
-  letter-spacing: 2px;
+  width: 265px;
+  letter-spacing: 1px;
   text-align: center;
   transition: all .3s ease-out;
 }
@@ -254,7 +299,12 @@ h3.txtpie:hover {
   transform: translate(0, 5px);
 }
 
-/* EDITAR EL TEXTO DEL PIE */
+#linkpie {
+  text-decoration: none;
+    color: white;
+}
+
+/* FIN DEL TEXTO DEL PIE */
 
 /* ACA PONGO EL FORM - css */
 label {
@@ -279,25 +329,33 @@ label {
 
 form {
   margin:0;
-  width:400px;
-  background-color: rgba(211, 211, 211, 0.56);
+  width:99%;
+  background-color: rgba(255, 255, 255, 0.79);
   padding: 12px 12px;
   border-radius: 8px 8px;
-  box-shadow: 0px 0px 8px 4px rgb(206, 206, 206);
+  box-shadow: 0px 0px 1px 1px rgb(255, 255, 255);
 
 }
 
+#ser22 {
+  margin: 4px;
+  color: #16a085;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 0px #000;
+}
+
 input, textarea {
-  width:380px;
-  height:27px;
-  background:#c5b8b844;
-  border:2px solid #d4d1d1;
+  width:99%;
+  height:38px;
+  background:rgba(255, 255, 255, 0.62);
+  border:0px solid #d4d1d1;
   padding:10px;
   margin-top:5px;
   font-size:14px;
-  color:#444141;
-  border-radius: 10px ;
-  box-shadow: 2px 2px 6px grey;
+  font-family: 'Nunito', sans-serif;
+  color:rgb(61, 61, 61);
+  border-radius: 5px ;
+  box-shadow: 1px 1px 4px 1px #9a9a9a;
   transition: all .3s ease-out;
   
 }
@@ -314,6 +372,7 @@ input:hover {
 
 textarea {
   height:150px;
+  font-family: 'Nunito', sans-serif;
 }
 
 #submit {
@@ -322,8 +381,10 @@ textarea {
   border:none;
   margin-top:20px;
   cursor:pointer;
-  border:2px solid #d4d1d1;
+  border:0px solid #d4d1d1;
 }
+
+
 
 /* ACA EDITO EL SCROLL ARRIBA - es de aweasome poner el script y el link */
 /*botón up*/
@@ -364,7 +425,7 @@ textarea {
 }
 .menu li {
   float: left;
-  width: 25%;
+  width: 20%;
   height: 100%;
   margin: 0;
   padding: 0;
@@ -386,7 +447,7 @@ a.active {
   pointer-events: none;
 }
 li.slider {
-  width: 25%;
+  width: 20%;
   height: 100%;
   position: absolute;
   left: 0;
@@ -404,20 +465,27 @@ li.slider {
 .menu li:nth-child(2):hover ~ .slider,
 .menu li:nth-child(2):focus ~ .slider,
 .menu li:nth-child(2):active ~ .slider {
-  left: 25%;
+  left: 20%;
   background-color: #9b59b6;
 }
 .menu li:nth-child(3):hover ~ .slider,
 .menu li:nth-child(3):focus ~ .slider,
 .menu li:nth-child(3):active ~ .slider {
-  left: 50%;
+  left: 40%;
   background-color: #e67e22;
 }
 .menu li:nth-child(4):hover ~ .slider,
 .menu li:nth-child(4):focus ~ .slider,
 .menu li:nth-child(4):active ~ .slider {
-  left: 75%;
+  left: 60%;
   background-color: #16a085;
+}
+
+.menu li:nth-child(5):hover ~ .slider,
+.menu li:nth-child(5):focus ~ .slider,
+.menu li:nth-child(5):active ~ .slider {
+  left: 80%;
+  background-color: #0069f3;
 }
 
 
@@ -438,7 +506,7 @@ li.slider {
 }
 
 
-@media (max-width:600px){
+@media (max-width:850px){
 h1 {
 font-size: 22px;
 }
@@ -449,9 +517,17 @@ font-size: 22px;
 
 }
 
+.logofinal {
+  display: none;
+}
+
 .nos {
   font-size: 23px;
   margin: -60px auto;
+}
+
+.caja h2 {
+  margin: auto auto;
 }
 
 .ser{
@@ -486,6 +562,14 @@ font-size: 22px;
     overflow-x: hidden;
   }
 
+  .logofinal {
+    display: none;
+  }
+
+  .menu a  {
+    font-size: 16px;
+  }
+
   .servicios {
     margin: 20px auto;
 }
@@ -502,6 +586,19 @@ font-size: 22px;
   margin: 1px 4px;
 
 }
+
+/* #somosid {
+  display: none;
+}
+
+#logofin {
+  display: none;
+} */
+
+.logofinal {
+  display: none;
+}
+
   .servicios {
     margin: 20px auto;
     font-size: 36px;

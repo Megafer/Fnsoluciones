@@ -7,22 +7,29 @@
     <!--Librería css de Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link href="styles/index.css" rel="stylesheet">
+    <style>
+     @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+    </style>
 </head>
 
+  <!-- Aca va el Logo y el texto del logo -->
 <body>
   <div class="arriba">
   <img class="logo" src="img/Fnlogo.png"></img>
   <h1>Servicio integral en Sistemas</h1>
 </div>
 
+<!-- Aca ponemos el menu -->
 <ul class="menu">
   <li><a href="#" class="active">Home</a></li>
   <li><a href="#nosotros">Nosotros</a></li>
   <li><a href="#servicios">Servicios</a></li>
+  <li><a href="#trabajos">Trabajos</a></li>
   <li><a href="#contacto">Contacto</a></li>
   <li class="slider"></li>
 </ul>
 
+<!-- Aca van las secciones divididas en Cajas -->
 <div class="caja1">
 <h3 class="somos">Somos una Empresa dedicada a brindar soluciones
   integrales a su medida. <br>Nos adaptamos al presupuesto y
@@ -84,7 +91,23 @@
     - Recuperación de Datos en Pc, Restauración sin pérdidas de datos,Backups, Control de usuarios y de la información manipulada por el mismo ( en empresas ), Protección de datos, Bloqueos de Internet..</p></details></h3>
   <br>
 </div>
+<div class="caja">
+  <h3 class="nosotros" id="nosotros">Trabajos</h3>
+    <h2 class="nos">Todos los trabajos realizados soy propios, se hacen a medida y pueden adaptarse según las necesidades del cliente, aquí algunos diseños para elegir.</h2>
+    <div class="contweb">
+      <div class="web">
+       <a title="Venta Online" href="https://megafer.github.io/ventas/"> <img class="imgweb" src="./img/v.jpg" alt="Venta Online"></a>
+      </div>
+      <div class="web">
+        <a title="Contrucciones" href="https://megafer.github.io/Construccion/"><img class="imgweb" src="./img/c.jpg" alt="Construcciones"></a> 
+      </div>
+      <div class="web">
+        <a title="Inmobiliaria" href="https://megafer.github.io/inmobiliaria/"><img class="imgweb" src="./img/i.jpg" alt="Inmobiliaria"></a>  
+      </div>
+    </div>
+  </div>
 
+<br>
 <div class="caja4">
   <h3 class="contacto" id="contacto">Contacto</h3>
   <div class="map-responsive">
@@ -92,15 +115,22 @@
 </div>
 <section class="principal">
   <!-- Aqui irá nuestro formulario -->
-  <form>
+  <form id="form1" action="enviar.php" method="post" name="form1" enctype="multipart/form-data">
+    <h3 class="ser2" id="ser22">Formulario de Contacto:</h3>
     <label for="nombre">Nombre:</label>
-    <input id="nombre" name="nombre" placeholder="Nombre completo">
+    <input id="nombre" name="nombre" placeholder="Nombre completo" required>
     <label for="email">Email:</label>
-    <input id="email" name="email" type="email" placeholder="ejemplo@email.com">
+    <input id="email" name="email" type="email" placeholder="Su mail" required>
     <label for="mensaje">Mensaje:</label>
-    <textarea id="mensaje" name="mensaje" placeholder="Danos tu mensaje"></textarea>
+    <textarea id="mensaje" name="mensaje" placeholder="Deje aqui su mensaje..."></textarea>
     <input id="submit" name="submit" type="submit" value="Enviar">
   </form>
+
+  <aside class="logofinal">
+    <img class="logo" id="logofin"  src="img/Fnlogo.png"></img>
+    <h3 class="somos" id="somosid">Gracias por visitar nuestra web ! <br> Aguardamos su consulta que será respondida a la bravedad. </h3>
+
+  </aside>
 </section>
 <br>
 <br>
@@ -114,7 +144,7 @@
 
 <footer>
   <div class="pie">
-    <h3 class="txtpie">Fnsoluciones@ 2021
+    <h3 class="txtpie"><a id="linkpie" href="http://fnsoluciones.com.ar">@2021 Fnsoluciones.com.ar
       <br> Buenos Aires - Arg
     </h3>
   </div>
